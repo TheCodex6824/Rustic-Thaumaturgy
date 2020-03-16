@@ -52,7 +52,6 @@ public class CommonProxy {
 		ModFluidsRT.init();
         ModBlocksRT.init();
         ModItemsRT.init();
-        initGolems();
     }
 	
 	public void init(FMLInitializationEvent event) {
@@ -65,7 +64,7 @@ public class CommonProxy {
                 new ResourceLocation("thaumcraft", "textures/gui/gui_research_back_over.png"));
 		
 		ThaumcraftApi.registerResearchLocation(new ResourceLocation(RusticThaumaturgy.MODID, "research/rustic_thaumaturgy"));
-	
+		initGolems();
 	}
 
     public void postInit(FMLPostInitializationEvent event) {
